@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FF00B9FF">
-        <TextBlock HorizontalAlignment="Left" Margin="42,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="708" FontSize="36" TextAlignment="Center"><Run Text="Welcome to the Digital Diary Journal Center!"/><LineBreak/><Run Text="Please login or register for an account."/></TextBlock>
-        <Button Content="Login" HorizontalAlignment="Left" Height="83" Margin="42,288,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="Green" Foreground="#FFFFFCFC"/>
-        <Button Content="Register" HorizontalAlignment="Left" Height="83" Margin="494,288,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="Green" Foreground="#FFFFFCFC" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="149" Width="693" FontSize="36" TextAlignment="Center"><Run Text="Welcome to the Digital Diary Journal Center!"/><LineBreak/><Run Text="Please login or register for an account."/></TextBlock>
+        <Button Content="Login" HorizontalAlignment="Left" Height="83" Margin="80,236,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="Green" Foreground="#FFFFFCFC"/>
+        <Button Content="Register" HorizontalAlignment="Left" Height="83" Margin="465,236,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="Green" Foreground="#FFFFFCFC" Click="Button_Click"/>
     </Grid>
 </Window>
