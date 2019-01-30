@@ -9,12 +9,12 @@
     <Grid Background="#FF3F7B8D">
         <TextBlock HorizontalAlignment="Left" Margin="127,10,0,0" TextWrapping="Wrap" Text="Please fill out the following information to register" VerticalAlignment="Top" Height="50" Width="553" FontSize="24"/>
         <DataGrid HorizontalAlignment="Left" Height="344" Margin="127,65,0,0" VerticalAlignment="Top" Width="553" SelectionChanged="DataGrid_SelectionChanged" Background="#FF9898D6"/>
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="398,87,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="249" Background="#FF06EEA4"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="398,124,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="249" Background="#FF18EEAA"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="398,158,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Width="249" Background="#FF24E0A4"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="398,192,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" Width="249" Background="#FF22E4A6"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="398,226,0,0" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Width="249" Background="#FF2EEAAE"/>
-        <TextBox HorizontalAlignment="Left" Height="29" Margin="398,260,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Width="249" Background="#FF2FECB0"/>
+        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="32" Margin="398,87,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="249" Background="#FF06EEA4"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="29" Margin="398,124,0,0"  VerticalAlignment="Top" Width="249" Background="#FF18EEAA"/>
+        <TextBox x:Name="Firstname" HorizontalAlignment="Left" Height="29" Margin="398,158,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Width="249" Background="#FF24E0A4"/>
+        <TextBox x:Name="Lastname" HorizontalAlignment="Left" Height="29" Margin="398,192,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" Width="249" Background="#FF22E4A6"/>
+        <TextBox x:Name="Emailaddress" HorizontalAlignment="Left" Height="29" Margin="398,226,0,0" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Width="249" Background="#FF2EEAAE"/>
+        <TextBox x:Name="Phonenumber" HorizontalAlignment="Left" Height="29" Margin="398,260,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Width="249" Background="#FF2FECB0"/>
         <TextBlock HorizontalAlignment="Left" Margin="143,87,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Height="31" Width="205"/>
         <TextBlock HorizontalAlignment="Left" Margin="143,119,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="31" Width="205"/>
         <TextBlock HorizontalAlignment="Left" Margin="143,155,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Height="31" Width="205"/>

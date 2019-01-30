@@ -15,36 +15,26 @@ using System.Windows.Shapes;
 namespace Digital_Journal
 {
     /// <summary>
-    /// Interaction logic for MainMenu.xaml
+    /// Interaction logic for ViewWindow.xaml
     /// </summary>
-    public partial class MainMenu : Window
+    public partial class ViewWindow : Window
     {
-        public MainMenu()
+        public ViewWindow()
         {
             InitializeComponent();
-
-
         }
         private void Button_Click_View(object sender, RoutedEventArgs e)
         {
-            ViewWindow viewWindow = new ViewWindow();
-            viewWindow.Show();
-            this.Close();
-        }
-        private void Button_Click_Add(object sender, RoutedEventArgs e)
-        {
-            AddWindow addWindow = new AddWindow();
-            addWindow.Show();
-            this.Close();
-        }
-        private void Button_Click_Edit(object sender, RoutedEventArgs e)
-        {
-            EditWindow editWindow = new EditWindow();
-            editWindow.Show();
-            this.Close();
+
         }
         private void Button_Click_Exit(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+        private void Button_Click_Main_Menu(object sender, RoutedEventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
             this.Close();
         }
     }

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Digital_Journal.ViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Digital_Journal"
+        mc:Ignorable="d"
+        Title="ViewWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="View" HorizontalAlignment="Left" Margin="342,320,0,0" VerticalAlignment="Top" Width="121" Height="62" FontSize="18" Click="Button_Click_View"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="482,320,0,0" VerticalAlignment="Top" Width="121" Height="62" FontSize="18" Click="Button_Click_Exit"/>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="200,320,0,0" VerticalAlignment="Top" Width="121" Height="62" FontSize="18" Click="Button_Click_Main_Menu"/>
+    </Grid>
+</Window>

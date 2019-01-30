@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,7 +39,8 @@ namespace Digital_Journal
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=LAPTOP-K53UNFKQ\MSSQLSERVER01; Initial Catalog=DigitalDiaryCenter; Integrated Security=True;");
+            var appSettings = ConfigurationManager.AppSettings;
+            SqlConnection sqlCon = new SqlConnection(appSettings["ConnectionString"]);
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
