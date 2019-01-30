@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
+using DigitalJourneyLibrary;
 
 namespace Digital_Journal
 {
@@ -19,6 +22,10 @@ namespace Digital_Journal
     /// </summary>
     public partial class Login : Window
     {
+        UserLibrary userLibrary = new UserLibrary();
+        LoginLibrary LoginLibrary = new LoginLibrary();
+        JournalLibrary JournalLibrary = new JournalLibrary();
+        
         public Login()
         {
             InitializeComponent();
@@ -31,7 +38,36 @@ namespace Digital_Journal
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=LAPTOP-K53UNFKQ\MSSQLSERVER01; Initial Catalog=DigitalDiaryCenter; Integrated Security=True;");
+            try
+            {
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+                string query = "SELECT COUNT(1), Username, Password FROM [User] WHERE Username =@Username AND Password=@Password Group By Username, Password";
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
+                sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Password);
+                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                if (count == 1)
+                {
+                    MainMenu mainMenu = new MainMenu();
+                    mainMenu.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Username or Password is incorrect");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
         }
     }
 }

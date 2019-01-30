@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Digital_Journal
 {
@@ -30,9 +32,17 @@ namespace Digital_Journal
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Login(object sender, RoutedEventArgs e)
         {
-
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+        private void Button_Click_Register(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Close();
         }
     }
 }

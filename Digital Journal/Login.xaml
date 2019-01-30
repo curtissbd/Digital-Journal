@@ -7,12 +7,11 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid Background="#FF20B23B">
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,237,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="520,237,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontSize="16"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="160,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" FontSize="16"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="520,237,0,159" Width="140" FontSize="14" />
         <TextBlock HorizontalAlignment="Left" Margin="160,211,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="520,211,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="138,44,0,0" TextWrapping="Wrap" Text="Please login " VerticalAlignment="Top" Height="61" Width="522" FontSize="36" TextAlignment="Center"/>
         <Button Content="Login" HorizontalAlignment="Left" Margin="325,280,0,0" VerticalAlignment="Top" Width="150" Height="70" Click="Button_Click" FontSize="36" Background="#FF1392C1"/>
-
     </Grid>
 </Window>

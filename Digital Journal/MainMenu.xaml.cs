@@ -15,24 +15,30 @@ using System.Windows.Shapes;
 namespace Digital_Journal
 {
     /// <summary>
-    /// Interaction logic for Register.xaml
+    /// Interaction logic for MainMenu.xaml
     /// </summary>
-    public partial class Register : Window
+    public partial class MainMenu : Window
     {
-        public Register()
+        public MainMenu()
         {
             InitializeComponent();
-        }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        }
+        private void Button_Click_View(object sender, RoutedEventArgs e)
         {
 
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Add(object sender, RoutedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+
+        }
+        private void Button_Click_Edit(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_Click_Exit(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

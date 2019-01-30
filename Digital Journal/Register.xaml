@@ -22,6 +22,5 @@
         <TextBlock HorizontalAlignment="Left" Margin="143,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="205" Text="Email Address"/>
         <TextBlock HorizontalAlignment="Left" Margin="143,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="205" Text="Phone number"/>
         <Button Content="Register" HorizontalAlignment="Left" Margin="295,320,0,0" VerticalAlignment="Top" Width="213" Height="73" Click="Button_Click" Background="#FF26F0C2" FontSize="36"/>
-
     </Grid>
 </Window>
