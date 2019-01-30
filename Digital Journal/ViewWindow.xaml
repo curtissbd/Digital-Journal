@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Digital_Journal"
         mc:Ignorable="d"
-        Title="ViewWindow" Height="450" Width="800">
+        Title="ViewWindow" Height="450" Width="800" FontSize="18">
     <Grid>
-        <Button Content="View" HorizontalAlignment="Left" Margin="342,320,0,0" VerticalAlignment="Top" Width="121" Height="62" FontSize="18" Click="Button_Click_View"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="482,320,0,0" VerticalAlignment="Top" Width="121" Height="62" FontSize="18" Click="Button_Click_Exit"/>
-        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="200,320,0,0" VerticalAlignment="Top" Width="121" Height="62" FontSize="18" Click="Button_Click_Main_Menu"/>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="181,321,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.101,0.05" Height="58" Click=" Button_Click_Main_Menu"/>
+        <Button Content="View" HorizontalAlignment="Left" Margin="342,321,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.101,0.05" Height="58" Click=" Button_Click_View"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="501,321,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="0.101,0.05" Height="58" Click=" Button_Click_Exit"/>
     </Grid>
 </Window>

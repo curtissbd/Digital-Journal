@@ -23,10 +23,6 @@ namespace Digital_Journal
         {
             InitializeComponent();
         }
-        private void Button_Click_View(object sender, RoutedEventArgs e)
-        {
-
-        }
         private void Button_Click_Exit(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -35,6 +31,10 @@ namespace Digital_Journal
         {
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
+            this.Close();
+        }
+        private void Button_Click_View(object sender, RoutedEventArgs e)
+        {
             this.Close();
         }
     }

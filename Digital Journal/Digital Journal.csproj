@@ -142,5 +142,18 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JournalBackground2.jpg" />
+    <Resource Include="Images\JournalBackground3.jpg" />
+    <Resource Include="Images\JournalBackground4.jpg" />
+    <Resource Include="Images\JournalBackground5.jpg" />
+    <Resource Include="Images\JournalBackground7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JournalBackground1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\JournalBackground6.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

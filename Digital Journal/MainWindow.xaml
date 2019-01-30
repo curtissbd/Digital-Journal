@@ -4,16 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Digital_Journal"
+        UseLayoutRounding="True"
+        ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF00B9FF">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="42,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="149" Width="693" FontSize="36" TextAlignment="Center"><Run Text="Welcome to the Digital Diary Journal Center!"/><LineBreak/><Run Text="Please login or register for an account."/></TextBlock>
-        <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" Height="83" Margin="465,236,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="Green" Foreground="#FFFFFCFC" Click="Button_Click_Register"/>
-        <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Height="83" Margin="80,236,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="Green" Foreground="#FFFFFCFC" Click="Button_Click_Login"/>
-
+    <Grid>
+        <Image Source="Images/JournalBackground5.jpg" Stretch="UniformToFill" UseLayoutRounding="True"/>
+        <Grid>
+            <TextBlock HorizontalAlignment="Left" Margin="42,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="149" Width="693" FontSize="36" TextAlignment="Center" UseLayoutRounding="True" Foreground="#FFF9F9FD"><Run Text="Welcome to the Digital Diary Journal Center!"/><LineBreak/><Run Text="Please login or register for an account."/></TextBlock>
+            <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" Height="83" Margin="463,267,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="#FF0E2B0E" Foreground="#FFFFFCFC" Click="Button_Click_Register" UseLayoutRounding="True"/>
+            <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Height="83" Margin="76,267,0,0" VerticalAlignment="Top" Width="256" FontSize="24" Background="#FF0F2C0F" Foreground="#FFFFFCFC" Click="Button_Click_Login" UseLayoutRounding="True" BorderThickness="0,1,1,1"/>
+        </Grid>
     </Grid>
 </Window>

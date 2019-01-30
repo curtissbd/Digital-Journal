@@ -23,5 +23,19 @@ namespace Digital_Journal
         {
             InitializeComponent();
         }
+        private void Button_Click_Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        private void Button_Click_Main_Menu(object sender, RoutedEventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.Close();
+        }
+        private void Button_Click_Add(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

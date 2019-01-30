@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Digital_Journal"
         mc:Ignorable="d"
-        Title="AddWindow" Height="450" Width="800">
+        Title="AddWindow" Height="450" Width="800" FontSize="18">
     <Grid>
-        <Label Content=" AddWindow"/>
+        <Button Content="Add Journal" HorizontalAlignment="Left" Margin="341,320,0,0" VerticalAlignment="Top" Width="119" Height="61" Click=" Button_Click_Add"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="501,320,0,0" VerticalAlignment="Top" Width="119" Height="61" Click=" Button_Click_Exit"/>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="180,320,0,0" VerticalAlignment="Top" Width="119" Height="61" Click="Button_Click_Main_Menu"/>
     </Grid>
 </Window>

@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Digital_Journal"
         mc:Ignorable="d"
-        Title="EditWindow" Height="450" Width="800">
+        Title="EditWindow" Height="450" Width="800" FontSize="18">
     <Grid>
-        <Label Content="EditWindow"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="120,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.Column="1"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="280,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.Column="1"/>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="180,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.ColumnSpan="2"/>
+        <TextBox Name="Phonenumber" HorizontalAlignment="Left" Height="30" Margin="320,291,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBox Name="Emailaddress" HorizontalAlignment="Left" Height="30" Margin="320,241,0,0" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBox Name="Firstname" HorizontalAlignment="Left" Height="30" Margin="320,191,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBox Name="Lastname" HorizontalAlignment="Left" Height="30" Margin="320,141,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <PasswordBox Name="Password" HorizontalAlignment="Left" Height="30" Margin="320,91,0,0" Password="Password" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,91,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,141,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,191,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,241,0,0" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,291,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="90,10,0,0" TextWrapping="Wrap" Text="Edit Profile" VerticalAlignment="Top" Height="50" Width="180" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,41,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
+        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="30" Margin="320,41,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
     </Grid>
 </Window>
