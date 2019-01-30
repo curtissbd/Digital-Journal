@@ -1,19 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Windows.Controls;
 
 namespace Digital_Journal
 {
@@ -55,10 +45,6 @@ namespace Digital_Journal
                 sqlCmd.Parameters.AddWithValue("@Emailaddress", Emailaddress.Text);
                 sqlCmd.Parameters.AddWithValue("@Phonenumber", Phonenumber.Text);
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-
-                Login login = new Login();
-                login.Show();
-                this.Close();
 
             }
             catch (Exception ex)

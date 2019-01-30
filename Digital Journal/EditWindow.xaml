@@ -11,9 +11,9 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="120,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.Column="1"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="120,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Edit" Grid.Column="1"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="280,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.Column="1"/>
-        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="180,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.ColumnSpan="2"/>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="180,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Main_Menu" Grid.ColumnSpan="2"/>
         <TextBox Name="Phonenumber" HorizontalAlignment="Left" Height="30" Margin="320,291,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
         <TextBox Name="Emailaddress" HorizontalAlignment="Left" Height="30" Margin="320,241,0,0" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
         <TextBox Name="Firstname" HorizontalAlignment="Left" Height="30" Margin="320,191,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
