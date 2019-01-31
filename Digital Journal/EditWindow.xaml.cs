@@ -45,7 +45,9 @@ namespace Digital_Journal
                 sqlCmd.Parameters.AddWithValue("@Emailaddress", Emailaddress.Text);
                 sqlCmd.Parameters.AddWithValue("@Phonenumber", Phonenumber.Text);
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-
+                MainMenu mainMenu = new MainMenu();
+                mainMenu.Show();
+                this.Close();
             }
             catch (Exception ex)
             {

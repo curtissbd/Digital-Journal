@@ -8,8 +8,8 @@
         Title="EditWindow" Height="450" Width="800" FontSize="18">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button Content="Edit" HorizontalAlignment="Left" Margin="120,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Edit" Grid.Column="1"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="280,343,0,0" VerticalAlignment="Top" Width="120" Height="60" Click="Button_Click_Exit" Grid.Column="1"/>

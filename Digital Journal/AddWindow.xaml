@@ -10,5 +10,7 @@
         <Button Content="Add Journal" HorizontalAlignment="Left" Margin="341,320,0,0" VerticalAlignment="Top" Width="119" Height="61" Click=" Button_Click_Add"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="501,320,0,0" VerticalAlignment="Top" Width="119" Height="61" Click=" Button_Click_Exit"/>
         <Button Content="Main Menu" HorizontalAlignment="Left" Margin="180,320,0,0" VerticalAlignment="Top" Width="119" Height="61" Click="Button_Click_Main_Menu"/>
+        <TextBox x:Name="JournalName" HorizontalAlignment="Left" Height="23" Margin="240,20,0,0" TextWrapping="Wrap" Text="Please enter the Journal Name here" VerticalAlignment="Top" Width="320" TextAlignment="Center"/>
+        <TextBox Name="Data" HorizontalAlignment="Left" Height="245" Margin="80,60,0,0" TextWrapping="Wrap" Text="Please enter your Journal entry here." VerticalAlignment="Top" Width="640"/>
     </Grid>
 </Window>

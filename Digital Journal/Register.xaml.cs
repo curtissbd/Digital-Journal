@@ -31,7 +31,6 @@ namespace Digital_Journal
             {
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
-                //string query = "INSERT INTO [dbo].[User] (Username, Password, FirstName, LastName, EmailAddress, PhoneNumber) VALUES(@Username, @Password, @Firstname, @Lastname, @Emailaddress, @Phonenumber)";
                 string query = "dbo.insertUser";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 sqlCmd.CommandType = CommandType.StoredProcedure;
