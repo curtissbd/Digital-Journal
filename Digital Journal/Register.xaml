@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:Digital_Journal"
         mc:Ignorable="d"
         Title="Register" Height="450" Width="800">
-    <Grid Background="#FF3F7B8D">
+    <Grid>
+        <Image Source="Images/JournalBackground6.jpg" Stretch="UniformToFill" UseLayoutRounding="True"/>
         <TextBlock HorizontalAlignment="Left" Margin="127,10,0,0" TextWrapping="Wrap" Text="Please fill out the following information to register" VerticalAlignment="Top" Height="50" Width="553" FontSize="24"/>
-        <DataGrid HorizontalAlignment="Left" Height="344" Margin="127,65,0,0" VerticalAlignment="Top" Width="553" SelectionChanged="DataGrid_SelectionChanged" Background="#FF9898D6"/>
         <TextBox x:Name="Username" HorizontalAlignment="Left" Height="32" Margin="398,87,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="249" Background="#FF06EEA4"/>
         <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="29" Margin="398,124,0,0"  VerticalAlignment="Top" Width="249" Background="#FF18EEAA"/>
         <TextBox x:Name="Firstname" HorizontalAlignment="Left" Height="29" Margin="398,158,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Width="249" Background="#FF24E0A4"/>
@@ -21,6 +21,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="143,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="205" Text="Last name"/>
         <TextBlock HorizontalAlignment="Left" Margin="143,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="205" Text="Email Address"/>
         <TextBlock HorizontalAlignment="Left" Margin="143,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="205" Text="Phone number"/>
-        <Button Content="Register" HorizontalAlignment="Left" Margin="295,320,0,0" VerticalAlignment="Top" Width="213" Height="73" Click="Button_Click" Background="#FF26F0C2" FontSize="36"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="420,320,0,0" VerticalAlignment="Top" Width="213" Height="73" Click="Button_Click" Background="#FF26F0C2" FontSize="36"/>
+        <Button Content="Return" HorizontalAlignment="Left" Margin="165,320,0,0" VerticalAlignment="Top" Width="213" Height="73" Click="Button_Click_Return" Background="#FF26F0C2" FontSize="36"/>
     </Grid>
+        
 </Window>

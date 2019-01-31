@@ -27,10 +27,11 @@ namespace Digital_Journal
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             var appSettings = ConfigurationManager.AppSettings;
             SqlConnection sqlCon = new SqlConnection(appSettings["ConnectionString"]);
+          
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
@@ -41,8 +42,10 @@ namespace Digital_Journal
                 sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                 sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Password);
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                
                 if (count == 1)
                 {
+                    
                     MainMenu mainMenu = new MainMenu();
                     mainMenu.Show();
                     this.Close();
@@ -59,7 +62,9 @@ namespace Digital_Journal
             finally
             {
                 sqlCon.Close();
+                
             }
+           
         }
     }
 }

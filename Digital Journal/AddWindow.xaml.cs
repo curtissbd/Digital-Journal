@@ -38,6 +38,8 @@ namespace Digital_Journal
         }
         private void Button_Click_Add(object sender, RoutedEventArgs e)
         {
+            Login login = new Login();
+           
             var appSettings = ConfigurationManager.AppSettings;
             SqlConnection sqlCon = new SqlConnection(appSettings["ConnectionString"]);
             try
@@ -47,6 +49,7 @@ namespace Digital_Journal
                 string query = "dbo.insertJournal";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 sqlCmd.CommandType = CommandType.StoredProcedure;
+                sqlCmd.Parameters.AddWithValue("@Username", login.txtUsername.Text);
                 sqlCmd.Parameters.AddWithValue("@JournalName", JournalName.Text);
                 sqlCmd.Parameters.AddWithValue("@Data", Data.Text);
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());

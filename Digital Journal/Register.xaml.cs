@@ -22,8 +22,13 @@ namespace Digital_Journal
         {
 
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_Return(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+            private void Button_Click(object sender, RoutedEventArgs e)
         {
             var appSettings = ConfigurationManager.AppSettings;
             SqlConnection sqlCon = new SqlConnection(appSettings["ConnectionString"]);

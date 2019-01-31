@@ -25,7 +25,5 @@
         <TextBlock HorizontalAlignment="Left" Margin="80,241,0,0" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
         <TextBlock HorizontalAlignment="Left" Margin="80,291,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="90,10,0,0" TextWrapping="Wrap" Text="Edit Profile" VerticalAlignment="Top" Height="50" Width="180" FontSize="36"/>
-        <TextBlock HorizontalAlignment="Left" Margin="80,41,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2" Width="160"/>
-        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="30" Margin="320,41,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
     </Grid>
 </Window>
